@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Comments</title>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="list" th:each="elem : ${list}">
+        <div class="list-elem js-list-elem">
+            <input type="hidden" class="js-list-elem-id" name="id" th:value="${elem.id}" />
+            <input class="list-elem-comment js-list-elem-comment" name="comment" th:value="${elem.comment}"/>
+            <div class="button-container">
+                <button class="list-elem-update">Update</button>
+                <button class="list-elem-remove">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

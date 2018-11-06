@@ -1,0 +1,37 @@
+.container{
+    margin: 20px;
+}
+.list-link{
+    text-decoration: none;
+    color: #2a5885;
+    margin-left: 5px;
+}
+.list-link:hover{
+    color: #00ff99;
+}
+
+.list-input-form{
+    margin-top: 15px;
+}
+.list-input-text{
+    margin-bottom: 15px;
+    display: block;
+    margin-left: 5px;
+}
+a{
+    cursor: pointer;
+}
+.list-input-submit, button{
+    background-color: #5181b8;
+    color: white;
+    border: none;
+    max-width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+}
+.list-elem-comment{
+    margin: 20px 5px;
+}

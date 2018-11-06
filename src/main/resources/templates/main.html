@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8" />
+    <title>Main</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <a href="/list" class="list-link">Show comments</a>
+    <form th:action="@{/list}" method="post" th:object="${record}" class="list-input-form">
+        <input type="text" placeholder="Input string..." name="comment" class="list-input-text"/>
+        <input type="submit" class="list-input-submit"/>
+    </form>
+</div>
+</body>
+</html>
